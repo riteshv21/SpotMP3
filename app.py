@@ -4,7 +4,6 @@ from flask import Flask, url_for, session, request, redirect
 import json
 import time
 import pandas as pd
-# from .downloadvideos import DownloadVideosFromTitles
 
 # App config
 app = Flask(__name__)
@@ -13,7 +12,7 @@ app.secret_key = 'SOMETHING-RANDOM'
 app.config['SESSION_COOKIE_NAME'] = 'spotify-login-session'
 
 clientid = input('Enter Client ID: ')
-clientsecret = input('Enter your Client Secret: ')
+clientsecret = input('Enter Client Secret: ')
 playlistid = input('Enter Playlist ID: ')
 
 @app.route('/')
