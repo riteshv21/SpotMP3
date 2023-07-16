@@ -45,7 +45,7 @@ def ScrapeVidId(query):
     BASIC="http://www.youtube.com/results?search_query="
     URL = (BASIC + query)
     URL = URL.replace(" ", "+")
-    print("URL1501: ", URL)
+    print("URL: ", URL)
     page = requests.get(URL)
     session = HTMLSession()
     response = session.get(URL)
